@@ -11,3 +11,6 @@ administrators are responsible for adding new restaurants to the platform.
 2. Acces localhost/travelgo (localhost/travelgo/login for admin pannel)
 -----------------------------------------------------------------------------
 Files are under wwww/TravelGo folder in the repo
+
+If you want to run TravelGO on a virtual machine or server, just copy the files under
+wwww/TravelGo folder
