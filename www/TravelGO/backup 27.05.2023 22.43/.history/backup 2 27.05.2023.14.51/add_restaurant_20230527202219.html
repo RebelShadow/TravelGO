@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Add Restaurant</title>
+</head>
+<body>
+    <h1>Add Restaurant</h1>
+
+    <form id="add-restaurant-form" action="add_restaurant.php" method="POST" enctype="multipart/form-data">
+        <label for="restaurant_name">Restaurant Name:</label>
+        <input type="text" id="restaurant_name" name="restaurant_name" required><br><br>
+    
+        <label for="restaurant_specific">Restaurant Specific:</label>
+        <input type="text" id="restaurant_specific" name="restaurant_specific"><br><br>
+    
+        <label for="restaurant_location">Restaurant Location:</label>
+        <input type="text" id="restaurant_location" name="restaurant_location" required><br><br>
+    
+        <label for="restaurant_open_time">Restaurant Open Time:</label>
+        <input type="time" id="restaurant_open_time" name="restaurant_open_time"><br><br>
+    
+        <label for="restaurant_close_time">Restaurant Close Time:</label>
+        <input type="time" id="restaurant_close_time" name="restaurant_close_time"><br><br>
+    
+        <label for="restaurant_image">Restaurant Photo:</label>
+        <input type="file" id="restaurant_image" name="restaurant_image"><br><br>
+    
+        <input type="submit" value="Add Restaurant">
+    </form>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Add Restaurant</title>
+    <link rel="stylesheet" href="http://localhost/TravelGO/css/admin_styles.css">
+</head>
+<body>
+    <h1>Add Restaurant</h1>
+
+    <form id="add-restaurant-form">
+        <label for="restaurant_name">Restaurant Name:</label>
+        <input type="text" id="restaurant_name" name="restaurant_name" required><br><br>
+    
+        <label for="restaurant_specific">Restaurant Specific:</label>
+        <input type="text" id="restaurant_specific" name="restaurant_specific"><br><br>
+    
+        <label for="restaurant_location">Restaurant Location:</label>
+        <input type="text" id="restaurant_location" name="restaurant_location" required><br><br>
+    
+        <label for="restaurant_open_time">Restaurant Open Time:</label>
+        <input type="time" id="restaurant_open_time" name="restaurant_open_time"><br><br>
+    
+        <label for="restaurant_close_time">Restaurant Close Time:</label>
+        <input type="time" id="restaurant_close_time" name="restaurant_close_time"><br><br>
+    
+        <label for="restaurant_image">Restaurant Photo:</label>
+        <input type="file" id="restaurant_image" name="restaurant_image"><br><br>
+    
+        <input type="submit" value="Add Restaurant">
+    </form>
+    
+    <script>
+        document.getElementById('add-restaurant-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+    
+            // Create a new FormData object
+            var formData = new FormData(this);
+    
+            // Send a POST request to the add_restaurant.php script
+            fetch('http://localhost/TravelGO/add_restaurant.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json()) // Parse the JSON response
+            .then(data => {
+                if (data.success) {
+                    alert(data.message); // Display success message
+                    window.location.href = "http://localhost/TravelGO/admin_panel.html"; // Redirect to dashboard
+                } else {
+                    alert(data.message); // Display error message
+                }
+            })
+            .catch(error => {
+                console.error(error);
+                alert("An error occurred while adding the restaurant.");
+            });
+        });
+    </script>
+    
+</body>
+</html>

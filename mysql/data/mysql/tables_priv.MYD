@@ -1,0 +1,24 @@
+230526 10:38:37 [ERROR] Native table 'performance_schema'.'events_waits_current' has the wrong structure
+230526 10:38:37 [ERROR] Native table 'performance_schema'.'events_waits_history' has the wrong structure
+230526 10:38:37 [ERROR] Native table 'performance_schema'.'events_waits_history_long' has the wrong structure
+230526 10:38:37 [ERROR] Native table 'performance_schema'.'setup_consumers' has the wrong structure
+230526 10:38:37 [ERROR] Native table 'performance_schema'.'setup_instruments' has the wrong structure
+230526 10:38:37 [ERROR] Native table 'performance_schema'.'setup_timers' has the wrong structure
+230526 10:38:37 [ERROR] Native table 'performance_schema'.'performance_timers' has the wrong structure
+230526 10:38:37 [ERROR] Native table 'performance_schema'.'threads' has the wrong structure
+230526 10:38:37 [ERROR] Native table 'performance_schema'.'events_waits_summary_by_thread_by_event_name' has the wrong structure
+230526 10:38:37 [ERROR] Native table 'performance_schema'.'events_waits_summary_by_instance' has the wrong structure
+230526 10:38:37 [ERROR] Native table 'performance_schema'.'events_waits_summary_global_by_event_name' has the wrong structure
+230526 10:38:37 [ERROR] Native table 'performance_schema'.'file_summary_by_event_name' has the wrong structure
+230526 10:38:37 [ERROR] Native table 'performance_schema'.'file_summary_by_instance' has the wrong structure
+230526 10:38:37 [ERROR] Native table 'performance_schema'.'mutex_instances' has the wrong structure
+230526 10:38:37 [ERROR] Native table 'performance_schema'.'rwlock_instances' has the wrong structure
+230526 10:38:37 [ERROR] Native table 'performance_schema'.'cond_instances' has the wrong structure
+230526 10:38:37 [ERROR] Native table 'performance_schema'.'file_instances' has the wrong structure
+230526 10:38:37 [Note] Event Scheduler: Loaded 0 events
+230526 10:38:37 [Note] D:\facultate\an 2\sem 2\DB\mowes_portable\mysql\bin\mysqld-nt.exe: ready for connections.
+Version: '5.5.8'  socket: ''  port: 3306  MySQL Community Server (GPL)
+230526 10:38:52 [ERROR] Incorrect definition of table mysql.proc: expected column 'comment' at position 15 to have type text, found type char(64).
+230526 10:46:23 [Note] D:\facultate\an 2\sem 2\DB\mowes_portable\mysql\bin\mysqld-nt.exe: Normal shutdown
+
+230526 10:46:23 [Note] Event Scheduler: Purging the queue. 0 events

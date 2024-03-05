@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Add Users</title>
+    <link rel="stylesheet" href="http://localhost/TravelGO/css/admin_styles.css">
+</head>
+<body>
+    <div class="user-management">
+        <h2>Add Users</h2>
+        <form action="http://localhost/TravelGO/add_user.php" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+
+            <label for="admin">Is Admin:</label>
+            <select id="admin" name="admin">
+                <option value="admin">Yes</option>
+                <option value="">No</option>
+            </select>
+            <br>
+
+            <button type="submit">Add User</button>
+        </form>
+    </div>
+</body>
+</html>

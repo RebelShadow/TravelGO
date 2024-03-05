@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Review</title>
+</head>
+<body>
+    <h2>Delete Review</h2>
+    <form id="deleteReviewForm">
+        <label for="review">Select a review:</label>
+        <select name="review" id="review">
+            <!-- Populate the dropdown options dynamically using JavaScript -->
+        </select>
+        <button type="submit">Delete</button>
+    </form>
+
+    <script>
+        document.getElementById("deleteReviewForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            var selectedReviewId = document.getElementById("review").value;
+
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "delete_review_php.php", true);
+            xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    console.log(xhr.responseText);
+                    // Handle the response as needed
+                }
+            };
+            xhr.send("review=" + selectedReviewId);
+        });
+    </script>
+</body>
+</html>

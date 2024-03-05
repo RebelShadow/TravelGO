@@ -1,0 +1,3 @@
+when using a drop-down, make separate phps because it cannot handle 2 at the time on the same page.
+one php with the form
+another with the php statement

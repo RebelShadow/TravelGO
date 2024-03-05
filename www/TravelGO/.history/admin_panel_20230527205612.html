@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="http://localhost/TravelGO/css/admin_styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Admin Panel</h1>
+        </div>
+        <br>
+        <nav>
+            <ul>
+                <li><a href="index.php">View Website</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <!-- TODO: Review the styles so it matches the general one -->
+                <li><a href="#" onclick="loadPage('http://localhost/TravelGO/restaurants.php')">View Restaurants</a></li>
+                <li><a href="#" onclick="loadPage('http://localhost/TravelGO/add_restaurant.html')">Add Restaurant</a></li>
+                <li><a href="#" onclick="loadPage('http://localhost/TravelGO/delete_restaurant.php')">Delete Restaurant</a></li>
+                <li><a href="#" onclick="loadPage('http://localhost/TravelGO/view_reviews.php')">View Reviews</a></li>
+                <li><a href="#" onclick="loadPage('http://localhost/TravelGO/delete_review.php')">Delete Reviews</a></li>
+                <li><a href="#" onclick="loadPage('http://localhost/TravelGO/users.php')">View Users</a></li>
+                <li><a href="#" onclick="loadPage('http://localhost/TravelGO/delete_user.php')">Delete User</a></li>
+                <li><a href="#" onclick="logout()">Log out</a></li>
+            </ul>
+        </div>
+        <div class="content" id="main-content">
+            <h2>Welcome to the Admin Panel</h2>
+            <p>Here you can manage your website content, users, and settings.</p>
+            <!-- Place your admin panel content here -->
+        </div>
+    </div>
+
+    <script>
+        function loadPage(pageUrl) {
+            console.log('Loading page: ' + pageUrl);
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                console.log('Ready state: ' + this.readyState + ', Status: ' + this.status);
+                if (this.readyState == 4 && this.status == 200) {
+                    console.log('Response received: ' + this.responseText);
+                    document.getElementById("main-content").innerHTML = this.responseText;
+                }
+            };
+            xhttp.open("GET", pageUrl, true);
+            xhttp.send();
+        }
+
+        function logout() {
+            // Make an AJAX request to the logout PHP page
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "http://localhost/TravelGO/logout_script.php", true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    // Redirect to index.html after session termination
+                    window.location.href = "http://localhost/TravelGO/index.html";
+                }
+            };
+            xhr.send();
+        }
+    </script>
+</body>
+</html>

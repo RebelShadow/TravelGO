@@ -1,0 +1,160 @@
+/* Reset default browser styles */
+body, h1, h2, h3, h4, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+
+   
+  header {
+	background-color: #0FC60D;
+	padding: 20px;
+	text-align: center;
+  }
+  
+  nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+  }
+  
+  nav ul li {
+	display: inline;
+	margin-right: 10px;
+  }
+  
+  nav ul li a {
+	color: #ffffff;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header {
+    background-color: #0FC60D;
+    padding: 20px;
+    color: white;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  section.restaurant {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 20px;
+  }
+  
+  .restaurant-info {
+    text-align: center;
+  }
+  
+  .restaurant-info img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .reviews {
+    margin-top: 20px;
+  }
+  
+  .reviews h3 {
+    margin-bottom: 10px;
+  }
+  
+  .review {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .review h4 {
+    margin-bottom: 5px;
+  }
+  
+  .review p {
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    background-color: #2A2D34;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* review form */
+  .review-form {
+    width: 100%;
+    padding: 10px;
+    background-color: #F8F8F8;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+  }
+  
+  .review-form h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .review-form form {
+    margin-top: 10px;
+  }
+  
+  .review-form label {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .review-form input[type="text"],
+  .review-form input[type="number"],
+  .review-form textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+  }
+  
+  .review-form input[type="submit"] {
+    display: inline-block;
+    background-color: #F26430;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .review-form input[type="submit"]:hover {
+    background-color: #2A2D34;
+  }
+  
+  

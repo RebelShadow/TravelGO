@@ -1,0 +1,350 @@
+/* Default Styles */
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #ffffff;
+	overflow-x: hidden; /* Add this line to hide horizontal overflow */
+  }
+  
+  
+  
+  .container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+  }
+  
+  
+  h1, h2, h3, h4, h5, h6 {
+	color: #2A2D34;
+  }
+  
+  a {
+	color: #6761A8;
+	text-decoration: none;
+  }
+  
+  a:hover {
+	color: #F26430;
+  }
+  
+  /* Header Styles */
+  
+  header {
+	background-color: #0FC60D;
+	padding: 20px;
+	text-align: center;
+  }
+  
+  nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+  }
+  
+  nav ul li {
+	display: inline;
+	margin-right: 10px;
+  }
+  
+  nav ul li a {
+	color: #ffffff;
+  }
+  
+  /* Slider Styles */
+  
+  .swiper-container {
+	width: 100%;
+	height: 300px;
+  }
+  
+  .swiper-slide {
+	text-align: center;
+  }
+  
+  .swiper-slide img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
+
+  /* CTA */
+
+  .CTA {
+	background-color: #6184D8;
+	color: #ffffff;
+	padding: 40px 0;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+  }
+  
+  .CTA .container {
+	background-color: #F26430;
+	position: relative; /* Add positioning context for shadows */
+	z-index: 1; /* Ensure the container is above shadows */
+	transform-style: preserve-3d; /* Preserve 3D transformations */
+	transform: rotateX(15deg); /* Rotate the container along the X-axis */
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add box shadow to the container */
+  }
+  
+  h2,
+  p,
+  .cta-button {
+	transform: translateZ(50px);
+  }
+  
+  .CTA .cta-button {
+	display: inline-block;
+	background-color: #2A2D34;
+	color: #ffffff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-size: 18px;
+	text-transform: uppercase;
+  }
+  
+  .CTA .cta-button:hover {
+	background-color: #6184D8;
+	color: #000;
+  }
+  
+  
+  
+  
+  /* Presentation Styles */
+  
+  .presentation {
+	background-color: #6184D8;
+	color: #ffffff;
+	padding: 40px 0;
+	text-align: center;
+  }
+  
+  .presentation h2 {
+	font-size: 32px;
+	margin-bottom: 20px;
+  }
+  
+  .presentation p {
+	font-size: 18px;
+	margin-bottom: 30px;
+  }
+  
+  .cta-button {
+	display: inline-block;
+	background-color: #F26430;
+	color: #ffffff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-size: 18px;
+	text-transform: uppercase;
+  }
+  
+  .cta-button:hover {
+	background-color: #2A2D34;
+  }
+
+  
+  /* Recent Reviews Styles */
+
+  .recent-reviews {
+    padding: 20px 0;
+    background-color: #f8f8f8;
+  }
+
+  .recent-reviews .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .recent-reviews h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+
+  .recent-reviews .review {
+    width: calc(21.7% - 20px);
+    display: inline-block;
+    margin: 0 10px 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	align-items: center;
+
+  }
+
+  .recent-reviews .review img {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .recent-reviews .review .restaurant-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .recent-reviews .review .username {
+    font-style: italic;
+    color: #888;
+    margin-bottom: 5px;
+  }
+
+  .recent-reviews .review .title {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .recent-reviews .review .stars {
+    margin-bottom: 5px;
+  }
+
+  .recent-reviews .review .body {
+    margin-bottom: 10px;
+  }
+
+  .recent-reviews .review .created-at {
+    font-style: italic;
+    color: #888;
+  }
+  .review .view-button {
+	background-color: #6184D8;
+	color: #fff;
+	padding: 8px 16px;
+	border-radius: 4px;
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+  }
+  
+  .review .view-button:hover {
+	background-color: #2A2D34;
+  }
+  
+  .review img {
+	margin-bottom: 10px;
+  }
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+	color: #fff;
+	font-size: 24px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 30px;
+	height: 30px;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 50%;
+	cursor: pointer;
+	transition: background-color 0.3s;
+  }
+  
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .swiper-button-next {
+	right: 10px;
+  }
+  
+  .swiper-button-prev {
+	left: 10px;
+  }
+  
+  
+  /* Contact Styles */
+  
+  .contact {
+	background-color: #F26430;
+	color: #ffffff;
+	padding: 40px 0;
+	text-align: center;
+  }
+  
+  .contact h2 {
+	font-size: 32px;
+	margin-bottom: 20px;
+  }
+  
+  .contact p {
+	font-size: 18px;
+	margin-bottom: 30px;
+  }
+  
+  form {
+	max-width: 600px;
+	margin: 0 auto;
+  }
+  
+  .form-group {
+	margin-bottom: 20px;
+  }
+  
+  label {
+	display: block;
+	font-size: 16px;
+	margin-bottom: 5px;
+	color: #ffffff;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+	width: 100%;
+	padding: 10px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: none;
+  }
+  
+  button[type="submit"] {
+	background-color: #2A2D34;
+	color: #ffffff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	font-size: 18px;
+	text-transform: uppercase;
+  }
+  
+  button[type="submit"]:hover {
+	background-color: #6761A8;
+  }
+  
+  /* Footer Styles */
+  
+  footer {
+	background-color: #2A2D34;
+	color: #ffffff;
+	padding: 20px;
+	text-align: center;
+  }
+  
+  footer p {
+	font-size: 14px;
+  }
+  
+  /* Media Queries */
+  
+  @media (max-width: 768px) {
+	h1 {
+	  font-size: 24px;
+	}
+  
+	h2 {
+	  font-size: 22px;
+	}
+  
+	h3 {
+	  font-size: 20px;
+	}
+  }

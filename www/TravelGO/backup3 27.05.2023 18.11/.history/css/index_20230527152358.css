@@ -1,0 +1,256 @@
+/* Default Styles */
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #ffffff;
+	overflow-x: hidden; /* Add this line to hide horizontal overflow */
+  }
+  
+  
+  
+  .container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+  }
+  
+  
+  h1, h2, h3, h4, h5, h6 {
+	color: #2A2D34;
+  }
+  
+  a {
+	color: #6761A8;
+	text-decoration: none;
+  }
+  
+  a:hover {
+	color: #F26430;
+  }
+  
+  /* Header Styles */
+  
+  header {
+	background-color: #0FC60D;
+	padding: 20px;
+	text-align: center;
+  }
+  
+  nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+  }
+  
+  nav ul li {
+	display: inline;
+	margin-right: 10px;
+  }
+  
+  nav ul li a {
+	color: #ffffff;
+  }
+  
+  /* Slider Styles */
+  
+  .swiper-container {
+	width: 100%;
+	height: 300px;
+  }
+  
+  .swiper-slide {
+	text-align: center;
+  }
+  
+  .swiper-slide img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
+
+  /* CTA */
+
+  .CTA {
+	background-color: #6184D8;
+	color: #ffffff;
+	padding: 40px 0;
+	text-align: center;
+	position: relative; /* Add positioning context for shadows */
+	z-index: 1; /* Ensure the section is above shadows */
+
+  }
+  
+  .CTA::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add box shadow */
+	transform: translateZ(-50px); /* Move the shadow away from the viewer */
+	z-index: -1; /* Position the shadow behind the section */
+  }
+  
+  .CTA .container {
+	transform-style: preserve-3d; /* Preserve 3D transformations */
+	transform: rotateX(15deg); /* Rotate the container along the X-axis */
+	background-color: #F26430;
+  }
+  
+  h2, p, .cta-button {
+	transform: translateZ(50px); /* Move the elements closer to the viewer */
+  }
+  
+  
+  
+  /* Presentation Styles */
+  
+  .presentation {
+	background-color: #6184D8;
+	color: #ffffff;
+	padding: 40px 0;
+	text-align: center;
+  }
+  
+  .presentation h2 {
+	font-size: 32px;
+	margin-bottom: 20px;
+  }
+  
+  .presentation p {
+	font-size: 18px;
+	margin-bottom: 30px;
+  }
+  
+  .cta-button {
+	display: inline-block;
+	background-color: #F26430;
+	color: #ffffff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-size: 18px;
+	text-transform: uppercase;
+  }
+  
+  .cta-button:hover {
+	background-color: #2A2D34;
+  }
+
+  
+  /* Recent Reviews Styles */
+  
+  .recent-reviews {
+	padding: 40px 0;
+	text-align: center;
+  }
+  
+  .review {
+	margin-bottom: 20px;
+  }
+  
+  .review h3 {
+	font-size: 24px;
+	margin-bottom: 10px;
+  }
+  
+  .review p {
+	font-size: 16px;
+	margin-bottom: 10px;
+  }
+  
+  .review .author {
+	font-style: italic;
+	font-size: 14px;
+	color: #2A2D34;
+  }
+  
+  /* Contact Styles */
+  
+  .contact {
+	background-color: #F26430;
+	color: #ffffff;
+	padding: 40px 0;
+	text-align: center;
+  }
+  
+  .contact h2 {
+	font-size: 32px;
+	margin-bottom: 20px;
+  }
+  
+  .contact p {
+	font-size: 18px;
+	margin-bottom: 30px;
+  }
+  
+  form {
+	max-width: 600px;
+	margin: 0 auto;
+  }
+  
+  .form-group {
+	margin-bottom: 20px;
+  }
+  
+  label {
+	display: block;
+	font-size: 16px;
+	margin-bottom: 5px;
+	color: #ffffff;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+	width: 100%;
+	padding: 10px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: none;
+  }
+  
+  button[type="submit"] {
+	background-color: #2A2D34;
+	color: #ffffff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	font-size: 18px;
+	text-transform: uppercase;
+  }
+  
+  button[type="submit"]:hover {
+	background-color: #6761A8;
+  }
+  
+  /* Footer Styles */
+  
+  footer {
+	background-color: #2A2D34;
+	color: #ffffff;
+	padding: 20px;
+	text-align: center;
+  }
+  
+  footer p {
+	font-size: 14px;
+  }
+  
+  /* Media Queries */
+  
+  @media (max-width: 768px) {
+	h1 {
+	  font-size: 24px;
+	}
+  
+	h2 {
+	  font-size: 22px;
+	}
+  
+	h3 {
+	  font-size: 20px;
+	}
+  }
