@@ -14,3 +14,5 @@
 *  http://www.gnu.org/licenses/gpl.html.
 *
 *************************************************************************************/
+I only worked under the www\TravelGO folder and the database, all the credits for that are mine. I do not 
+assume the credits for other programs that makes this functioning
